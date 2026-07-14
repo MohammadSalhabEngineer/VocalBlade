@@ -1,0 +1,20 @@
+[project]
+name = "vocalblade"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "django>=5.2.6",
+    "django-choices-field>=3.0.1",
+    "f5-tts>=1.1.17",
+    "huggingface-hub[hf-xet]>=0.35.0",
+    "opencv-python-headless>=4.13.0.92",
+    "soundfile>=0.12.0",
+    "strawberry-django-auth>=0.378.4",
+    "strawberry-graphql-django>=0.65.1",
+    "whisperx>=3.4.2",
+]
+
+[project.optional-dependencies]
+ai-audio = ["diffusers>=0.27.0", "transformers>=4.36.0", "accelerate>=0.25.0"]

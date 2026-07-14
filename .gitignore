@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Python virtual environments
+.venv/
+venv/
+
+# CUDA 11 compat libs (machine-specific runtime, see backend README)
+vocal_blade_backend/.cudnn8/
+
+# Django
+db.sqlite3
+vocal_blade_backend/src/media/
+
+# Node / frontend
+node_modules/
+dist/
+frontend-mvp/dist/
+
+# Model weights / large local-only assets
+models/
+
+# Vendored third-party projects (kept locally, not pushed)
+third_party/
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Sample / scratch artifacts
+harvard.wav
+segments_out.json
+vocal_blade_backend/src/segments.json
+
+# Logs
+*.log
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
